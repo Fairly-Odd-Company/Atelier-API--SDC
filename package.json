@@ -1,0 +1,23 @@
+{
+  "name": "Atelier-API-SDC",
+  "version": "1.0.0",
+  "description": "System Design Capstone - working on implementing the backend for an existing Atelier Front End",
+  "main": "ReviewSchemaNoSQL.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fairy-Company/Atelier-API-SDC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fairy-Company/Atelier-API-SDC/issues"
+  },
+  "homepage": "https://github.com/Fairy-Company/Atelier-API-SDC#readme",
+  "dependencies": {
+    "mongoose": "^6.5.0",
+    "pg": "^8.7.3"
+  }
+}
