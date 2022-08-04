@@ -10,5 +10,6 @@ app.put('/reviews/:review_id/helpful', incrementHelpful);
 app.put('/reviews/:review_id/report', reportReview);
 app.post('/reviews', insertReview);
 
-app.listen(3000);
-console.log(`server listening at port: 3000`)
+const port = process.env.Port || 3000;
+app.listen(port);
+console.log(`server listening at port: ${port}`)
