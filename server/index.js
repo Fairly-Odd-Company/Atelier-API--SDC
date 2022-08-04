@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const { getAllreviews, getMeta, incrementHelpful, reportReview, insertReview, loaderioo } = require('./controller.js')
+const { getAllreviews, getMeta, incrementHelpful, reportReview, insertReview, loaderio } = require('./controller.js')
 const app = express();
 app.use(express.json())
 
