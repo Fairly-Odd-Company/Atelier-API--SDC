@@ -162,3 +162,7 @@ exports.insertReview = (req, res) => {
   .then(() => res.status(201).send('Created'))
   .catch((err) => console.log(err));
 };
+
+exports.loaderio = (req, res) => {
+  res.send('../loaderio/loaderio-5f74b65164351c6e8cfe4b695d5f05df.txt');
+}
