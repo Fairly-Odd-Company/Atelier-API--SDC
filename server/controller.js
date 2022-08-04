@@ -164,5 +164,5 @@ exports.insertReview = (req, res) => {
 };
 
 exports.loaderio = (req, res) => {
-  res.send('../loaderio/loaderio-5f74b65164351c6e8cfe4b695d5f05df.txt');
+  res.attachment('/home/ubuntu/Atelier-Reviews-API/loaderio/loaderio-5f74b65164351c6e8cfe4b695d5f05df.txt');
 }
