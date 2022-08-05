@@ -164,7 +164,7 @@ exports.insertReview = (req, res) => {
 };
 
 exports.loaderio = (req, res) => {
-  res.sendFile('/home/ubuntu/Atelier-Reviews-API/loaderio/loaderio-5f74b65164351c6e8cfe4b695d5f05df.txt', (err) => {
+  res.sendFile('/home/ubuntu/Atelier-Reviews-API/loaderio/loaderio-26d4d5513a7da6c66d07246820a07d30.txt', (err) => {
     if(err){
     console.log('error');
     } else {
