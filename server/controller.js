@@ -55,7 +55,7 @@ exports.getAllreviews =  (req, res) => {
       res.send(response.rows[0].row_to_json.json_build_object);
     })
     .catch((err) => {
-      return console.log(err);
+      console.log(err);
       res.send(err);
     })
 };
@@ -90,7 +90,7 @@ from (
     res.send(response.rows[0].row_to_json.json_build_object);
   })
   .catch((err) => {
-    return console.log(err);
+    console.log(err);
     res.send(err);
   })
 };
@@ -103,7 +103,6 @@ exports.incrementHelpful = (req, res) => {
 
   db.query(query)
   .then((response) => {
-    console.log(response);
     res.sendStatus(204);
   })
   .catch((err) => {
@@ -119,7 +118,6 @@ exports.reportReview = (req, res) => {
 
   db.query(query)
   .then((response) => {
-    console.log(response);
     res.sendStatus(204);
   })
   .catch((err) => res.send(err));
@@ -128,10 +126,9 @@ exports.reportReview = (req, res) => {
 exports.insertReview = (req, res) => {
   const { product_id, rating, summary, body, recommend, name, email, photos, characteristics } = req.body;
   const values = [product_id, rating, summary, body, recommend, name, email];
-  console.log(values);
   const photosRows = [];
   const characterisitcs_array = [];
-  console.log(characterisitcs_array);
+
 
 
   db.query(`
@@ -146,17 +143,13 @@ exports.insertReview = (req, res) => {
       for (let i = 0; i < photos.length; i++) {
         photosRows.push([review_id, photos[i]]);
       }
-      console.log('hi', photosRows);
       db.query(format(`INSERT INTO photos (review_id, url) VALUES %L`, photosRows), []);
       return review_id;
     })
     .then((review_id) => {
-      console.log(review_id);
-      console.log(characteristics, 'char');
       for(let key in characteristics) {
         characterisitcs_array.push([key, characteristics[key], review_id]);
       }
-      console.log(characterisitcs_array)
       return db.query(format(`INSERT INTO characteristic_reviews (characteristic_id, value, review_id) VALUES %L`, characterisitcs_array), []);
     })
   .then(() => res.status(201).send('Created'))
