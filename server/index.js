@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path');
+require('dotenv').config();
 const { getAllreviews, getMeta, incrementHelpful, reportReview, insertReview, loaderio } = require('./controller.js')
 const app = express();
 app.use(express.json())
