@@ -6,7 +6,7 @@ const pool = new Pool({ode
   user: 'kesang',
   database: 'sdc_rr',
   password: 'kesang2021',
-  port: process.env.host || 5432,
+  port: process.env.portdb || 5432,
 });
 
 pool.on('error', (err, client) => {
