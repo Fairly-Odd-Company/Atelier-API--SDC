@@ -40,7 +40,10 @@ Create a dedicated micro-service with modern architecture to boost performance a
 ![Screen Shot 2022-08-06 at 7.37.24 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/782730e0-2439-4af8-8fd5-e8ef6811d550/Screen_Shot_2022-08-06_at_7.37.24_PM.png)
 
 **Load Balancer + Caching (2000 users per sec):**
-![Screen Shot 2022-08-07 at 11.12.08 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/393debe1-8d8d-4570-a649-3b692485b4eb/Screen_Shot_2022-08-07_at_11.12.08_AM.png)
+.. image:: https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F393debe1-8d8d-4570-a649-3b692485b4eb%2FScreen_Shot_2022-08-07_at_11.12.08_AM.png?table=block&id=34bf6167-b541-41ee-a07f-6d248683f7b6&spaceId=a5e68ee8-c124-4823-9dad-174b61ce5b97&width=1920&userId=a3acceaa-b374-45c5-ae67-c5fced6dd299&cache=v2
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
 
 
 
