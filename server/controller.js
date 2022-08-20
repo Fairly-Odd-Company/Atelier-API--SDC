@@ -56,7 +56,7 @@ exports.getAllreviews =  (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.send(err);
+      res.satus(404).send(err);
     })
 };
 
@@ -91,7 +91,7 @@ from (
   })
   .catch((err) => {
     console.log(err);
-    res.send(err);
+    res.status(404).send(err);
   })
 };
 
@@ -106,7 +106,7 @@ exports.incrementHelpful = (req, res) => {
     res.sendStatus(204);
   })
   .catch((err) => {
-    res.send(err);
+    res.status(404).send(err);
   })
 };
 
@@ -120,7 +120,7 @@ exports.reportReview = (req, res) => {
   .then((response) => {
     res.sendStatus(204);
   })
-  .catch((err) => res.send(err));
+  .catch((err) => res.status(404).send(err));
 };
 
 exports.insertReview = (req, res) => {
@@ -153,11 +153,11 @@ exports.insertReview = (req, res) => {
       return db.query(format(`INSERT INTO characteristic_reviews (characteristic_id, value, review_id) VALUES %L`, characterisitcs_array), []);
     })
   .then(() => res.status(201).send('Created'))
-  .catch((err) => console.log(err));
+  .catch((err) => res.status(404).send(err));
 };
 
 exports.loaderio = (req, res) => {
-  res.sendFile('/home/ubuntu/Atelier-Reviews-API/loaderio/loaderio-02253c2cf1dbe1a0c0f09707dcb30094.txt', (err) => {
+  res.send('', (err) => {
     if(err){
     console.log('error');
     } else {
