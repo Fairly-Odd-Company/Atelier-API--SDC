@@ -35,16 +35,16 @@ Create a dedicated micro-service with modern architecture to boost performance a
 ## Loaderio
 `Last 10% of all reviews route`
 </br>
-**No Optimization BottleNeck(1500 requests per sec):**
+### **No Optimization BottleNeck(1500 requests per sec):**
 
 <p align="center">
 <img src="/assets/1500RPS-NO.png" alt="1500 requests per sec with No optimization" width="50%"/>
 </p>
 
-**Load Balancer + 2 Servers (2000 requests per sec):**
+### **Load Balancer + 2 Servers (2000 requests per sec):**
 ![2000 requests per sec with Load Balancer(NGINX) and two servers](/assets/2LB2000RPS.png)
 
-**Load Balancer + 2 Servers + Caching (3500 requests per sec):**
+### **Load Balancer + 2 Servers + Caching (3500 requests per sec):**
 ![3500 requests per sec with Load Balancer(NGINX), two servers, and NGINX caching](/assets/2LBC3500RPS.png)
 
 ## Technologies Used:
