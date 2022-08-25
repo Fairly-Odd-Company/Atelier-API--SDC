@@ -56,7 +56,7 @@ exports.getAllreviews =  (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.satus(404).send(err);
+      res.satus(500).send(err);
     })
 };
 
@@ -91,7 +91,7 @@ from (
   })
   .catch((err) => {
     console.log(err);
-    res.status(404).send(err);
+    res.status(500).send(err);
   })
 };
 
@@ -106,7 +106,7 @@ exports.incrementHelpful = (req, res) => {
     res.sendStatus(204);
   })
   .catch((err) => {
-    res.status(404).send(err);
+    res.status(500).send(err);
   })
 };
 
@@ -120,7 +120,7 @@ exports.reportReview = (req, res) => {
   .then((response) => {
     res.sendStatus(204);
   })
-  .catch((err) => res.status(404).send(err));
+  .catch((err) => res.status(500).send(err));
 };
 
 exports.insertReview = (req, res) => {
@@ -153,7 +153,7 @@ exports.insertReview = (req, res) => {
       return db.query(format(`INSERT INTO characteristic_reviews (characteristic_id, value, review_id) VALUES %L`, characterisitcs_array), []);
     })
   .then(() => res.status(201).send('Created'))
-  .catch((err) => res.status(404).send(err));
+  .catch((err) => res.status(500).send(err));
 };
 
 exports.loaderio = (req, res) => {
