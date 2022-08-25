@@ -38,7 +38,7 @@ Create a dedicated micro-service with modern architecture to boost performance a
 ### **No Optimization BottleNeck(1500 requests per sec):**
 
 <p align="center">
-<img src="/assets/1500RPS-NO.png" alt="1500 requests per sec with No optimization" width="50%"/>
+<img src="/assets/1500RPS-NO.png" alt="1500 requests per sec with No optimization" width="70%"/>
 </p>
 
 ### **Load Balancer + 2 Servers (2000 requests per sec):**
