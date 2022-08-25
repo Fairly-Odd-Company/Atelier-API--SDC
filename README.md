@@ -34,7 +34,7 @@ Create a dedicated micro-service with modern architecture to boost performance a
 
 ## Loaderio
 `Last 10% of all reviews route`
-<p font-weight="bold">
+<p style="font-weight:bold">
 No Optimization BottleNeck(1500 requests per sec):
   </p>
 <p align="center">
