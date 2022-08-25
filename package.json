@@ -1,7 +1,7 @@
 {
-  "name": "Atelier-API-SDC",
+  "name": "Atelier_Reviews_Service",
   "version": "1.0.0",
-  "description": "System Design Capstone - working on implementing the backend for an existing Atelier Front End",
+  "description": "System Design Capstone - Designed and implemented the migration from a monolithic API into dedicated service oriented architecture",
   "main": "server/index.js",
   "scripts": {
     "server-dev": "npx nodemon --watch server server/index.js",
