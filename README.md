@@ -55,9 +55,9 @@ Create a dedicated micro-service with modern architecture to boost performance a
 <p align="center">
 <img src="/assets/CPU-U-2LBC.png" alt="CPU Utilization Load Balancer + 2 Servers + Caching @ (4000 requests per sec)" width="70%"/>
 </p>
-### **Future Perfomance Optimizations**
-</br>
-- Look into horizontally scalling the database and loadbalancer
+### **CPU Utilization Load Balancer + 2 Servers + Caching @ (4000 requests per sec)**
+
+
 
 ## Technologies Used:
 
