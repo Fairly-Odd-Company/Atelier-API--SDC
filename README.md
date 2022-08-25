@@ -42,10 +42,19 @@ Create a dedicated micro-service with modern architecture to boost performance a
 </p>
 
 ### **Load Balancer + 2 Servers (2000 requests per sec):**
-![2000 requests per sec with Load Balancer(NGINX) and two servers](/assets/2LB2000RPS.png)
+<p align="center">
+<img src="/assets/2LB2000RPS.png" alt="2000 requests per sec with Load Balancer(NGINX) and two servers" width="70%"/>
+</p>
 
 ### **Load Balancer + 2 Servers + Caching (3500 requests per sec):**
-![3500 requests per sec with Load Balancer(NGINX), two servers, and NGINX caching](/assets/2LBC3500RPS.png)
+<p align="center">
+<img src="/assets/2LBC3500RPS.png" alt="3500 requests per sec with Load Balancer(NGINX), two servers, and NGINX caching" width="70%"/>
+</p>
+
+### **CPU Utilization Load Balancer + 2 Servers + Caching @ (4000 requests per sec)**
+<p align="center">
+<img src="/assets/CPU-U-2LBC.png" alt="CPU Utilization Load Balancer + 2 Servers + Caching @ (4000 requests per sec)" width="70%"/>
+</p>
 
 ## Technologies Used:
 
